@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en-CA">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 - Style Guide Template</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>P01 - Style Guide Template</h1>
+
+      <p>A template you can use to start building out your own style guides with.</p>
+
+
+      <nav class="nav-styleguide">        
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="home-template.html">Homepage Template</a>
+        <a href="project-template.html">Project Template</a>
+      </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+          <code>.intext-link</code>
+        
+        <h4>Sample code:</h4>
+          <code>&lt;a href="url" class="intext-link" &gt;link text&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+          <p>Here is an example text with a <a class="intext-link" href="https://www.w3schools.com/html/html_links.asp">link</a>.</p>
+        <!-- studied up on using anchors from here: https://www.w3schools.com/html/html_links.asp -->
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+  
+        <h4>CSS selector:</h4>
+          <code>.button-nav</code>
+        
+        <h4>Sample code:</h4>
+          <code>&lt;a class="button-nav " href="#locationID" class="button-nav"&gt;Link Text&lt;/a&gt;</code>
+
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#interactive_elements">Sample Navigation Link</a>
+
+      </section>
+
+      <section class="element">
+
+        <h3>Animated Navigation Link</h3>
+  
+        <h4>CSS selector:</h4>
+          <code>.button-nav-animated </code>
+          <code>
+            .animated-skull</code>
+            <code>
+            .animated-door</code>
+        
+        <h4>Sample code:</h4>
+          <code>&lt;a href="#interactive_elements"&gt;&lt;div class="button-nav-animated"&gt;&lt;img class="animated-skull" src="img\skull-icon-empty.png"&gt; &lt;a class="button-nav" href="#interactive_elements"&gt;Sample Navigation Link&lt;/a&gt;&lt;/div&gt;&lt;/a&gt;</code>
+
+          <code>&lt;a href="#interactive_elements">&lt;div class="button-nav-animated-vertical"&gt;&lt;img class="animated-door" src="img\door-icon-empty.png"&gt;&lt;a class="button-nav" href="#interactive_elements"&gt;Sample Navigation Link&lt;/a&gt;&lt;/div&gt;&lt;/a&gt;</code>
+
+
+        <h4>Rendered element:</h4>
+        <a href="#interactive_elements"><div class="button-nav-animated"><img class="animated-skull" src="img\skull-icon-empty.png"> <a class="button-nav" href="#interactive_elements">Sample Navigation Link</a></div></a>
+
+        <a href="#interactive_elements"><div class="button-nav-animated-vertical"><img class="animated-door" src="img\door-icon-empty.png"><a class="button-nav" href="#interactive_elements">Sample Navigation Link</a></div></a>
+        <!-- <a href="#interactive_elements"> </a> -->
+
+      </section>
+
+
+      
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        
+        <h4>CSS selector:</h4>
+          <code>.image-link</code>
+        
+        <h4>Sample code:</h4>
+          <code>&lt;a class="image-link" href="url" class="image-link" &gt;&lt;img src="img source" &gt;&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+          <a class="image-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img"><img src="img\nwnEye.png"></a>
+      <!-- had to remind myself about which attribute let me determine image source by looking at https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img -->
+        </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <h4>CSS selector:</h4>
+          <code>h1</code>
+          <code>h2</code>
+          <code>h3</code>
+          <code>h4</code>
+        
+        <h4>Sample code:</h4>
+          <code>&lt; h1 &gt;Header 1&lt; /h1 &gt;&lt; h2 &gt;Header 2&lt; /h2 &gt;&lt; h3 &gt;Header 3&lt; h3 &gt;&lt; h4 &gt;Header 4&lt; h4 &gt;</code>
+
+        <h4>Rendered element:</h4>
+          <h1>First layer of headers</h1>
+            <h2>Second layer of headers</h2>
+              <h3>Third layer of headers</h3>
+                <h4>Fourth layer of headers</h4>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <h4>CSS selector:</h4>
+          <code>p</code>
+        
+        <h4>Sample code:</h4>
+          <code>&lt;p&gt;paragraph text&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+          <p>sample paragraph text</p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        
+          <h4>CSS selector:</h4>
+            <code>ol</code>
+            <code>li</code>
+        
+        <h4>Sample code:</h4>
+          <code>&lt;ol&gt; <br>
+                  &lt;li&gt;Item One&lt;/li&gt; <br>
+                  &lt;li&gt;Item Two&lt;/li&gt; <br>
+                  &lt;li&gt;Item Three&lt;/li&gt; <br>
+                &lt;/ol&gt;
+          </code>
+
+        <!-- Used Robot demo as reference -->
+        <h4>Rendered element:</h4>
+        <ol>
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+        </ol>
+      </section>
+
+      <section class="element">
+        <h3>Paragraph and Image</h3>
+        
+          <h4>CSS selector:</h4>
+            <code></code>
+           
+        
+        <h4>Sample code:</h4>
+          <code>
+          </code>
+
+        <!-- Used Robot demo as reference -->
+        <h4>Rendered element:</h4>
+        <div class="paraImage"> <p class="paraImage-paragraph"> This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text.</p><img class="paraImage-image" src="img/nwnEye.png"></div>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+
+        <h4>CSS selector:</h4>
+          <code>.nav-main</code>
+          <code>.nav-main-item, .nav-main-item:hover, .nav-main-time:focus</code>
+        
+        <h4>Sample code:</h4>
+          <code>
+            &lt;nav class="nav-main"&gt;
+      &lt;a href="#interactive_elements"
+        &gt;&lt;div class="button-nav-animated"&gt;
+          &lt;img class="animated-icon" src="img\skull-icon-empty.png" /&gt;
+          &lt;a class="button-nav" href="#interactive_elements"&gt;Home&lt;/a&gt;
+        &lt;/div&gt;&lt;/a
+      &gt;
+      &lt;a href="#interactive_elements"
+        &gt;&lt;div class="button-nav-animated"&gt;
+          &lt;img class="animated-icon" src="img\skull-icon-empty.png" /&gt;
+          &lt;a class="button-nav" href="#interactive_elements"&gt;Projects&lt;/a&gt;
+        &lt;/div&gt;&lt;/a
+      &gt;
+      &lt;a href="#interactive_elements"
+        &gt;&lt;div class="button-nav-animated"&gt;
+          &lt;img class="animated-icon" src="img\skull-icon-empty.png" /&gt;
+          &lt;a class="button-nav" href="#interactive_elements"&gt;Bio&lt;/a&gt;
+        &lt;/div&gt;&lt;/a
+      &gt;
+      &lt;a href="#interactive_elements"
+        &gt;&lt;div class="button-nav-animated"&gt;
+          &lt;img class="animated-icon" src="img\skull-icon-empty.png" /&gt;
+          &lt;a class="button-nav" href="#interactive_elements"&gt;Contact&lt;/a&gt;
+        &lt;/div&gt;&lt;/a
+      &gt;
+
+    &lt;/nav&gt;
+          </code>
+
+        <h4>Rendered element:</h4>
+          <nav class="nav-main nav-example">
+      <a href="#interactive_elements"
+        ><div class="button-nav-animated">
+          <img class="animated-skull" src="img\skull-icon-empty.png" />
+          <a class="button-nav" href="#interactive_elements">Home</a>
+        </div></a
+      >
+      <a href="#interactive_elements"
+        ><div class="button-nav-animated">
+          <img class="animated-skull" src="img\skull-icon-empty.png" />
+          <a class="button-nav" href="#interactive_elements">Projects</a>
+        </div></a
+      >
+      <a href="#interactive_elements"
+        ><div class="button-nav-animated">
+          <img class="animated-skull" src="img\skull-icon-empty.png" />
+          <a class="button-nav" href="#interactive_elements">Bio</a>
+        </div></a
+      >
+      <a href="#interactive_elements"
+        ><div class="button-nav-animated">
+          <img class="animated-skull" src="img\skull-icon-empty.png" />
+          <a class="button-nav" href="#interactive_elements">Contact</a>
+        </div></a
+      >
+      <!-- <form class="text-input search-bar"><label for="search-bar" class="text-input-label"><input class="text-input-box" type="text" id="search-bar" name="search-bar" placeholder="Search"></label></form> -->
+    </nav>
+              <!--Referenced the Robot demo-->
+      </section>
+
+    <section class="element">
+      <h3>Side Border</h3>
+        <h4>CSS selector:</h4>
+        <code>.pillar-container</code>
+        <code>.pillar-upper</code>
+        <code>.pillar-middle</code>
+        <code>.pillar-container</code>
+      <h4>Sample code:</h4>
+        <code>
+          &lt;div class="pillar-container"&gt;
+        &lt;img class="pillar-upper" src="img\pillar-icon-upper.png"&gt;
+        &lt;img class= pillar-middle src="img\pillar-icon-middle.png"&gt;
+        &lt;img class="pillar-lower" src="img\pillar-icon-lower.png"&gt;
+      &lt;/div&gt;
+        </code>
+
+      <h4>Rendered element:</h4>
+      <div class="pillar-container">
+        <img class="pillar-upper" src="img\pillar-icon-upper.png">
+        <img class= pillar-middle src="img\pillar-icon-middle.png">
+        <img class="pillar-lower" src="img\pillar-icon-lower.png">
+      </div>
+
+    </section>
+<!-- FOOTER CODE -->
+<!-- <section class="element">
+  <h3>Footer</h3>
+  <h4>CSS selector:</h4>
+  <code>footer</code>
+  <code>.footer</code>
+
+  <h4>Sample code: </h4>
+  <code>
+     &lt;a href="guide.html" class="footer-item"&gt;Citations &lt;/a>
+       &lt;a href="guide.html" class="footer-item">Style Guide &lt;/a>
+      </code>
+  <h4>Rendered element:</h4>
+  <footer class="footer-example">
+    <a href="https://github.com/CianHo/IAT339-P01-P02" class="footer-item">Github</a>
+      <a href="guide.html" class="footer-item">Citations</a>
+      <a href="guide.html" class="footer-item">Style Guide</a>
+    </footer>
+</section> -->
+      
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <h2>Brand Identity</h2>
+      <p>I am attempting to situate my ethos as a game designer and developer steeped in a love for games and all of the things that emerge from them.  Gameplay, narrative, and community can all emerge from game systems.  As part of this, I am taking visual inspiration for my portfolio from classic tabletop roleplaying game rulebooks and art, as those games showcased how utilizing game systems can create gameplay more involved than the rules alone would suggest and stories that came from playing the game itself.  By using this inspiration I hope to convey a deep love and understanding of the medium, as well as stand out from other sites that may hew closer to clean and modern visual styles. </p>
+    <h2>Possible Fonts</h2>
+      <img src="img\legion-font-sample.png">
+      <p>League Spartan would make a good choice for regular text, as it is simple and readable, while also bearing a resemblance to the font used within the rulebook of the first edition of Dungeons and Dragons, which ties it into the overall aesthetic theme.</p>
+      <img src="img\quentin-font-sample.png">
+      <p>QuentinCaps could be used for important headers and titles, as it is eye catching and impressive.  It is, or at least is similar to, the font used for the cover page of the first Dungeons and Dragons rulebook, tying it to the aesthetic in the same way as League Spartan.  However, it is somewhat busy, so avoiding visual clutter will be important.  It may also clash with other aspects of the aesthetic, so it may need to be replaced.</p>
+      <h2>Art Direction Inspiration</h2>
+      <figure class="art-inspo"><img src="img/poag-assassin.png" class="art-inspo-image"><figcaption>"Assasin", Stefan Poag, 2021</figcaption></figure>
+      <figure class="art-inspo"><img src="img/mullen-tunnel.png" class="art-inspo-image"><figcaption>"Tunnel", Peter Mullen, 2026</figcaption></figure>
+      <figure class="art-inspo"><img src="img/mullen-pillar.png" class="art-inspo-image"><figcaption>"Pillars", Peter Mullen, 2026</figcaption></figure>
+      <figure class="art-inspo"><img src="img/mullen-unnamed.png" class="art-inspo-image"><figcaption>Unnamed, Peter Mullen, n.d.</figcaption></figure>
+
+      <h2>Static Mockups</h2>
+      
+
+
+    <h2>Citations</h2>
+    <ul></ul>
+  </body>
+</html>
